@@ -1,0 +1,209 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lexend', sans-serif;
+}
+a {
+  text-decoration: none;
+} 
+ul, li {
+  text-decoration: none;
+}
+
+.buttonStyle {
+  border-radius: 40px;
+  border: 1px solid #F88C4E;
+  padding: 10px 25px;
+  transition: 0.3s;
+  background: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #363636;
+}
+
+.buttonStyle:hover {
+  background: linear-gradient(180deg, #FFA262 -18.42%, #F07953 100%);
+  padding: 10px 25px;
+  color: white;
+}
+.buttoncolor {
+  color: #363636 ;
+}
+.buttoncolor:hover {
+  color: white ;
+}
+.nav-item {
+  margin: 0px 10px;
+}
+.nav-link {
+  color: #363636;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.nav-link:hover {
+  color: #F27E55 !important;
+}
+.navbar-nav {
+  align-items: center !important;
+  justify-content: center;
+}
+.itemCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.textCenter {
+  display: flex;
+  align-items: center;
+}
+.bgImage {
+  background-image: url(../images/content/background.png);
+  background-size: auto 350px;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+.custom-list {
+  list-style-type: disc; /* Set bullet point style */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 15px;
+}
+
+.custom-list li {
+  color: #2E2E2E; /* Set text color */
+}
+
+.custom-list li:before {
+  color: orange; /* Set bullet point color */
+}
+/* ================ Color CSS Style ====================
+========================================================*/
+.colorBg {
+  background-color: #FAFAFA;
+}
+
+
+/* ================ Fonts CSS Style ====================
+========================================================*/
+
+.colorFont {
+  color: #F27E55;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.titleText {
+  color: #535353;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; 
+}
+.headingH2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  color: #535353;
+}
+.text24 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.text40 {
+  color: #535353;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.text18 {
+  color: #656667;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+
+
+/* ================ Responsive Design CSS Style ====================
+====================================================================*/
+
+/* Extra large devices (extra large desktops) */
+@media (min-width: 1200px) {
+  .missonTextWidth {
+    width: 75%;
+  }
+}
+
+/* Large devices (large desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .buttoncolor {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .bgImage {
+    background-size: auto 250px;
+  }
+  /* ================ Fonts CSS Style ==================== */
+  .colorFont {
+    font-size: 20px;
+  }
+  .titleText {
+    font-size: 48px;
+  }
+}
+
+/* Medium devices (laptops, desktops) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .buttoncolor {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+}
+
+/* Small devices (tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .buttoncolor {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+   /* ================ Fonts CSS Style ==================== */
+   .colorFont {
+    font-size: 20px;
+  }
+  .titleText {
+    font-size: 48px;
+  }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 575.98px) {
+  .buttoncolor {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+   /* ================ Fonts CSS Style ==================== */
+   .colorFont {
+    font-size: 18px;
+  }
+  .titleText {
+    font-size: 40px;
+  }
+}
+
+
+
+
+
+
+
