@@ -21,7 +21,6 @@ ul, li {
   line-height: 150%;
   color: #363636;
 }
-
 .buttonStyle:hover {
   background: linear-gradient(180deg, #FFA262 -18.42%, #F07953 100%);
   padding: 10px 25px;
@@ -32,6 +31,17 @@ ul, li {
 }
 .buttoncolor:hover {
   color: white ;
+}
+.buttonStyleGreen {
+  border-radius: 40px;
+  padding: 10px 25px;
+  transition: 0.3s;
+  background: linear-gradient(180deg, #48B580 -28.07%, #3EAAA1 100%);
+  border: none;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  color: white;
 }
 .nav-item {
   margin: 0px 10px;
@@ -97,10 +107,24 @@ ul, li {
   box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.10);
   padding: 25px 25px 0px 25px;
 }
+
+.workProcess {
+  width: 403px;
+  height: 392px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 0px 0px 25%;
+}
+.workBox {
+  width: 310px;
+}
 /* ================ Color CSS Style ====================
 ========================================================*/
 .colorBg {
   background-color: #FAFAFA;
+}
+.secondColorBg {
+  background-color: #FAF9F9;
 }
 
 .serviceBg {
@@ -138,18 +162,18 @@ ul, li {
   line-height: 120%;
   color: #535353;
 }
-.text24 {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
-}
 .text40 {
   color: #535353;
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+}
+.text24 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
 }
 .text18 {
   color: #656667;

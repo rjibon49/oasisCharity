@@ -8,6 +8,8 @@ import AboutUs from '../components/HomePage/AboutUs'
 import Appointment from '../components/HomePage/Appointment'
 import Service from '../components/HomePage/Service'
 import OurDoctor from '../components/HomePage/OurDoctor'
+import WorkProcess from '../components/HomePage/WorkProcess'
+import EduAndCareer from '../components/HomePage/EduAndCareer'
 
 
 export default function Home() {
@@ -21,6 +23,8 @@ export default function Home() {
         <Appointment />
         <Service />
         <OurDoctor />
+        <WorkProcess />
+        <EduAndCareer />
       </Layout>
     </>
   )
