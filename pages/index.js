@@ -5,6 +5,9 @@ import FirstSection from '../components/HomePage/FirstSection'
 import OurMission from '../components/globalComponents/OurMission'
 import OurVission from '../components/globalComponents/OurVission'
 import AboutUs from '../components/HomePage/AboutUs'
+import Appointment from '../components/HomePage/Appointment'
+import Service from '../components/HomePage/Service'
+import OurDoctor from '../components/HomePage/OurDoctor'
 
 
 export default function Home() {
@@ -15,6 +18,9 @@ export default function Home() {
         <OurMission />
         <OurVission />
         <AboutUs />
+        <Appointment />
+        <Service />
+        <OurDoctor />
       </Layout>
     </>
   )

@@ -81,12 +81,38 @@ ul, li {
 .custom-list li:before {
   color: orange; /* Set bullet point color */
 }
+
+.serviceBody {
+  display: grid;
+  grid-template-columns: 48% 2% 48%;
+  gap: 5px;
+  padding: 50px;
+}
+.serviceWidth {
+  width: 70%;
+}
+.DoctorImageBg {
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.10);
+  padding: 25px 25px 0px 25px;
+}
 /* ================ Color CSS Style ====================
 ========================================================*/
 .colorBg {
   background-color: #FAFAFA;
 }
 
+.serviceBg {
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.vertical-line {
+  width: 2px; /* Set the desired width for the vertical line */
+  height: 100%; /* Make the vertical line full height */
+  background-color: #2E2E2E; /* Change the color as needed */
+}
 
 /* ================ Fonts CSS Style ====================
 ========================================================*/
@@ -135,6 +161,30 @@ ul, li {
 
 
 
+/* ================ Appointment Form CSS Style ====================
+====================================================================*/
+
+.portraitMaleImage {
+  max-width: 75% !important;
+  min-width: 75% !important;
+  max-height: 75% !important;
+  min-height: 75% !important;
+}
+.form-control, .form-select {
+  border-radius: 100px;
+  border: 1px solid #363636;
+}
+.formWidth {
+  width: 85%;
+}
+.appointmentBg {
+  background-image: url(../images//content//appoinmentBg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 90%;
+}
+
+
 /* ================ Responsive Design CSS Style ====================
 ====================================================================*/
 
@@ -154,12 +204,24 @@ ul, li {
   .bgImage {
     background-size: auto 250px;
   }
+  .formWidth {
+    width: 100%;
+  }
+  .appointmentBg {
+    background-size: 95%;
+  }
+  .serviceWidth {
+    width: 85%;
+  }
   /* ================ Fonts CSS Style ==================== */
   .colorFont {
     font-size: 20px;
   }
   .titleText {
     font-size: 48px;
+  }
+  .text40 {
+    font-size: 34px;
   }
 }
 
@@ -169,6 +231,24 @@ ul, li {
     margin-bottom: 20px;
     margin-top: 10px;
   }
+  .formWidth {
+    width: 100%;
+  }
+  .appointmentText {
+    text-align: center;
+  }
+  .appointmentBg {
+    background-size: 95%;
+  }
+  .serviceWidth {
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* ================ Fonts CSS Style ==================== */
+  .text40 {
+    font-size: 28px;
+  }
+
 }
 
 /* Small devices (tablets) */
@@ -176,6 +256,21 @@ ul, li {
   .buttoncolor {
     margin-bottom: 20px;
     margin-top: 10px;
+  }
+  .formWidth {
+    width: 100%;
+  }
+  .appointmentText {
+    text-align: center;
+  }
+  .appointmentBg {
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+  }
+  .serviceWidth {
+    text-align: center;
+    width: 100%;
   }
    /* ================ Fonts CSS Style ==================== */
    .colorFont {
@@ -192,12 +287,33 @@ ul, li {
     margin-bottom: 20px;
     margin-top: 10px;
   }
+  .formWidth {
+    width: 100%;
+  }
+  .appointmentText {
+    text-align: center;
+  }
+  .appointmentBg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .serviceWidth {
+    text-align: center;
+    width: 100%;
+  }
+  .serviceBody {
+    grid-template-columns: 100%;
+  }
    /* ================ Fonts CSS Style ==================== */
    .colorFont {
     font-size: 18px;
   }
   .titleText {
     font-size: 40px;
+  }
+  .text40 {
+    font-size: 30px;
   }
 }
 
