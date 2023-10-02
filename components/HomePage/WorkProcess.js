@@ -13,7 +13,7 @@ const WorkProcess = () => {
                     <h5 className="colorFont">Working Process</h5>
                     <h2 className="text40">How we works?</h2>
                 </div>
-                <div className='d-flex justify-content-between flex-wrap'>
+                <div className='d-flex justify-content-around flex-wrap gap-5'>
                     <div className="workProcess itemCenter">
                         <div className="workBox"> 
                             <Image src={one} alt="One Icon" className="" />

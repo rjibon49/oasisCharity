@@ -10,6 +10,8 @@ import Service from '../components/HomePage/Service'
 import OurDoctor from '../components/HomePage/OurDoctor'
 import WorkProcess from '../components/HomePage/WorkProcess'
 import EduAndCareer from '../components/HomePage/EduAndCareer'
+import Volunteer from '../components/HomePage/Volunteer'
+import JoinCommiunity from '../components/HomePage/JoinCommiunity'
 
 
 export default function Home() {
@@ -25,6 +27,8 @@ export default function Home() {
         <OurDoctor />
         <WorkProcess />
         <EduAndCareer />
+        <Volunteer />
+        <JoinCommiunity />
       </Layout>
     </>
   )

@@ -8,7 +8,7 @@ const EduAndCareer = () => {
             <div className='container'>
                 <div className='row'>
                     <div className='col-xxl-5 col-xl-5 col-lg-5 textCenter'>
-                        <div>
+                        <div className='mb-5'>
                             <h3 className='text40 pb-2'>Education & Career Advancement Courses</h3>
                             <p className='text18 pb-2'>Learn from our expert and learn professional skills to start a career and use to help others.  Please a look at our courses, they are free for our students.</p>
                             <button type="submit" className="buttonStyleGreen">Enroll Now</button>

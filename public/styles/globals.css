@@ -13,17 +13,16 @@ ul, li {
 .buttonStyle {
   border-radius: 40px;
   border: 1px solid #F88C4E;
-  padding: 10px 25px;
+  padding: 10px 30px;
   transition: 0.3s;
   background: white;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 150%;
   color: #363636;
 }
 .buttonStyle:hover {
   background: linear-gradient(180deg, #FFA262 -18.42%, #F07953 100%);
-  padding: 10px 25px;
   color: white;
 }
 .buttoncolor {
@@ -38,7 +37,7 @@ ul, li {
   transition: 0.3s;
   background: linear-gradient(180deg, #48B580 -28.07%, #3EAAA1 100%);
   border: none;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 150%;
   color: white;
@@ -75,6 +74,11 @@ ul, li {
   background-repeat: repeat-x;
   background-position: center;
 }
+.volunteerBg {
+  background-image: url(../images/content/volunteerBg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 
 .custom-list {
   list-style-type: disc; /* Set bullet point style */
@@ -107,16 +111,22 @@ ul, li {
   box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.10);
   padding: 25px 25px 0px 25px;
 }
-
 .workProcess {
-  width: 403px;
-  height: 392px;
+  padding: 50px 40px;
   background: #FFFFFF;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
   border-radius: 0px 0px 0px 25%;
 }
 .workBox {
   width: 310px;
+}
+.volunteerTitle {
+  width: 75%;
+}
+.volunteerText {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 100px;
 }
 /* ================ Color CSS Style ====================
 ========================================================*/
@@ -136,6 +146,9 @@ ul, li {
   width: 2px; /* Set the desired width for the vertical line */
   height: 100%; /* Make the vertical line full height */
   background-color: #2E2E2E; /* Change the color as needed */
+}
+.colorText{
+  color: #F27E55;
 }
 
 /* ================ Fonts CSS Style ====================
@@ -237,6 +250,9 @@ ul, li {
   .serviceWidth {
     width: 85%;
   }
+  .volunteerText {
+    padding-bottom: 0px;
+  }
   /* ================ Fonts CSS Style ==================== */
   .colorFont {
     font-size: 20px;
@@ -268,6 +284,13 @@ ul, li {
     text-align: center;
     margin: 0 auto;
   }
+  .volunteerBg {
+    background-position: 0px 185px;
+  }
+  .revarce {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   /* ================ Fonts CSS Style ==================== */
   .text40 {
     font-size: 28px;
@@ -295,6 +318,13 @@ ul, li {
   .serviceWidth {
     text-align: center;
     width: 100%;
+  }
+  .revarce {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .volunteerBg {
+    background-position: -25px 110px;
   }
    /* ================ Fonts CSS Style ==================== */
    .colorFont {
@@ -328,6 +358,13 @@ ul, li {
   }
   .serviceBody {
     grid-template-columns: 100%;
+  }
+  .revarce {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .volunteerBg {
+    background-position: -25px 110px;
   }
    /* ================ Fonts CSS Style ==================== */
    .colorFont {
