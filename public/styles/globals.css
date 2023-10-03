@@ -9,20 +9,22 @@ a {
 ul, li {
   text-decoration: none;
 }
-
+.footerHeight {
+  height: 100px;
+}
 .buttonStyle {
   border-radius: 40px;
   border: 1px solid #F88C4E;
   padding: 10px 30px;
   transition: 0.3s;
-  background: white;
+  background: linear-gradient(180deg, #FFA262 -18.42%, #F07953 100%);
   font-size: 20px;
   font-weight: 700;
   line-height: 150%;
-  color: #363636;
+  color: white;
 }
 .buttonStyle:hover {
-  background: linear-gradient(180deg, #FFA262 -18.42%, #F07953 100%);
+  background: linear-gradient(180deg, #48B580 -28.07%, #3EAAA1 100%);
   color: white;
 }
 .buttoncolor {
@@ -58,6 +60,9 @@ ul, li {
 .navbar-nav {
   align-items: center !important;
   justify-content: center;
+}
+.footerMenu .navbar-nav {
+  align-items: start !important;
 }
 .itemCenter {
   display: flex;
@@ -145,6 +150,27 @@ ul, li {
   padding: 12px;
   border-radius: 50%;
   font-size: 28px;
+}
+.footerIcon {
+  font-size: 24px;
+}
+.footerTextWidth {
+  max-width: 60%;
+}
+.footerBottomLine {
+  width: 100%;
+  height: 2px;
+  color: #282828;
+  background-color: #282828;
+}
+.subscribeInput {
+  border-radius: 100px;
+    border: 1px solid var(--2B6869, #2B6869);
+    box-shadow: 1px 1px 14px 0px rgba(0, 0, 0, 0.06);
+    width: 70%;
+    padding: 20px;
+    font-size: 18px;
+    margin: 10px 0px;
 }
 /* ================ Team CSS Style ====================
 ========================================================*/
@@ -235,6 +261,13 @@ ul, li {
   font-weight: 400;
   line-height: 160%;
 }
+.text14{
+  color: #363636;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
 
 
 
@@ -261,6 +294,27 @@ ul, li {
   background-size: 90%;
 }
 
+/* .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
 
 /* ================ Responsive Design CSS Style ====================
 ====================================================================*/
@@ -295,6 +349,12 @@ ul, li {
   }
   .teamContentbg {
     width: 450px;
+  }
+  .subscribeInput {
+    width: 100%;
+  }
+  .footerTextWidth {
+    max-width: 70%;
   }
   /* ================ Fonts CSS Style ==================== */
   .colorFont {
@@ -337,6 +397,12 @@ ul, li {
   .teamBg {
     margin-bottom: 50px;
   }
+  .subscribeInput {
+    width: 100%;
+  }
+  .footerTextWidth {
+    max-width: 80%;
+  }
   /* ================ Fonts CSS Style ==================== */
   .text40 {
     font-size: 28px;
@@ -374,6 +440,12 @@ ul, li {
   }
   .teamBg {
     margin-bottom: 50px;
+  }
+  .subscribeInput {
+    width: 100%;
+  }
+  .footerTextWidth {
+    max-width: 100%;
   }
    /* ================ Fonts CSS Style ==================== */
    .colorFont {
@@ -420,6 +492,12 @@ ul, li {
   }
   .teamContentbg {
     width: 350px;
+  }
+  .subscribeInput {
+    width: 100%;
+  }
+  .footerTextWidth {
+    max-width: 100%;
   }
    /* ================ Fonts CSS Style ==================== */
    .colorFont {

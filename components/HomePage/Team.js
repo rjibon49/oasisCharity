@@ -2,14 +2,8 @@
 import React from 'react';
 import anthony from "../../public/images/content/Anthony_Nguyen.png";
 import huma from "../../public/images/content/huma_javed.png";
-import { Autoplay, Navigation, Pagination } from 'swiper';
 
-// import { Autoplay, Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import "swiper/css";
-import "swiper/css/pagination"; 
 import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Team = () => {
     return (
