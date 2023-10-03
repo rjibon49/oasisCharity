@@ -68,6 +68,10 @@ ul, li {
   display: flex;
   align-items: center;
 }
+.centerItem {
+  display: flex;
+  justify-content: center;
+}
 .bgImage {
   background-image: url(../images/content/background.png);
   background-size: auto 350px;
@@ -128,6 +132,40 @@ ul, li {
   align-items: flex-end;
   padding-bottom: 100px;
 }
+.modelWidth {
+  max-width: 780px !important;
+}
+.modalImage {
+  width: 15%;
+  margin-right: 30px;
+}
+.iconColor {
+  color: #2b6869;
+  background: #F2FAFA;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 28px;
+}
+/* ================ Team CSS Style ====================
+========================================================*/
+
+
+.teamImage {
+  /* margin-bottom: -150px !important; */
+  border-radius: 100%;
+}
+.teamContentbg {
+  background: #FFFFFF;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px 10px 10px 75px;
+    padding: 180px 25px 25px 40px !important;
+    margin-top: -150px;
+    width: 525px;
+  }
+
+
+
+
 /* ================ Color CSS Style ====================
 ========================================================*/
 .colorBg {
@@ -136,7 +174,9 @@ ul, li {
 .secondColorBg {
   background-color: #FAF9F9;
 }
-
+.footerBgColor {
+  background-color: #F1F9FF;
+}
 .serviceBg {
   border-radius: 10px;
   background: #FFF;
@@ -253,6 +293,9 @@ ul, li {
   .volunteerText {
     padding-bottom: 0px;
   }
+  .teamContentbg {
+    width: 450px;
+  }
   /* ================ Fonts CSS Style ==================== */
   .colorFont {
     font-size: 20px;
@@ -291,6 +334,9 @@ ul, li {
     display: flex;
     flex-direction: column-reverse;
   }
+  .teamBg {
+    margin-bottom: 50px;
+  }
   /* ================ Fonts CSS Style ==================== */
   .text40 {
     font-size: 28px;
@@ -325,6 +371,9 @@ ul, li {
   }
   .volunteerBg {
     background-position: -25px 110px;
+  }
+  .teamBg {
+    margin-bottom: 50px;
   }
    /* ================ Fonts CSS Style ==================== */
    .colorFont {
@@ -365,6 +414,12 @@ ul, li {
   }
   .volunteerBg {
     background-position: -25px 110px;
+  }
+  .teamBg {
+    margin-bottom: 50px;
+  }
+  .teamContentbg {
+    width: 350px;
   }
    /* ================ Fonts CSS Style ==================== */
    .colorFont {
