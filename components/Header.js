@@ -6,6 +6,37 @@ import Image from 'next/image';
 const Header = () => {
     return (
         <>
+            <div className='darkBg'>
+                <div className='container'>
+                    <div className='d-flex justify-content-between align-items-center'>
+                        <div className='headerIconWidth py-3'>
+                            <select id="inputState" className="headerCountrySelect">
+                                <option selected>United State</option>
+                                <option>Span</option>
+                                <option>Bangladesh</option>
+                                <option>India</option>
+                            </select>
+                        
+                            <div className='d-flex flex-wrap justify-content-between gap-2 pt-3'>
+                                <i class="fa-brands fa-facebook headerIcon"></i>
+                                <i class="fa-brands fa-instagram headerIcon"></i>
+                                <i class="fa-brands fa-linkedin headerIcon"></i>
+                                <i class="fa-brands fa-youtube headerIcon"></i>
+                                <i class="fa-brands fa-pinterest headerIcon"></i>
+                                <i class="fa-brands fa-twitter headerIcon"></i>
+                            </div>
+                        </div>
+                        <div className=''>
+                            <select id="inputState" className="headerCountrySelect">
+                                <option selected>English</option>
+                                <option>Spanish</option>
+                                <option>Bangla</option>
+                                <option>Hindi</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className='container'>
                 <nav className="navbar-light navbar navbar-expand-xl">
                     <div className="container-fluid">

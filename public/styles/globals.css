@@ -154,6 +154,18 @@ ul, li {
 .footerIcon {
   font-size: 24px;
 }
+.headerIcon {
+  color: white;
+}
+.headerCountrySelect {
+  border: none;
+  background: transparent;
+  color: white;
+  padding-right: 24px;
+}
+.headerIconWidth {
+  max-width: 150px;
+}
 .footerTextWidth {
   max-width: 60%;
 }
@@ -196,6 +208,9 @@ ul, li {
 ========================================================*/
 .colorBg {
   background-color: #FAFAFA;
+}
+.darkBg {
+  background-color: #363636;
 }
 .secondColorBg {
   background-color: #FAF9F9;

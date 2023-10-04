@@ -22,7 +22,7 @@ const Team = () => {
                                     <h3 className='text24 pb-2'>Anthony Nguyen</h3>
                                     <h6 className='text18 pb-2'>Founder | CEO | Project Oasis Charity</h6>
                                     <p className='text18'>Dung 'Anthony' Nguyen is a Co-Founder and Chief Operations Officer of FWFA. Anthony was awarded a bachelor’s in accounting from California State University, San Bernardino.</p>
-                                    <div className='d-flex align-item-center gap-3'>
+                                    <div className='d-flex align-item-center gap-3 flex-wrap'>
                                         <button type="button" className="buttonStyle" data-bs-toggle="modal" data-bs-target="#anthony"> Know More </button>
                                         <i class="fa-brands fa-facebook iconColor"></i>
                                         <i class="fa-brands fa-linkedin iconColor"></i>
