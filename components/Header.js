@@ -55,7 +55,7 @@ const Header = () => {
                                     <Link href="/about-us"><a className="nav-link" >About Us</a></Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="#"><a className="nav-link" >Service</a></Link>
+                                    <Link href="/service"><a className="nav-link" >Service</a></Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link href="#"><a className="nav-link">Our Team</a></Link>
