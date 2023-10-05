@@ -37,7 +37,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className='container'>
+            <div className='container sticky-top'>
                 <nav className="navbar-light navbar navbar-expand-xl">
                     <div className="container-fluid">
                         <Link href="/" className="navbar-brand"><Image src={logo} alt='Oasis Charity Logo' className='' /></Link>
@@ -52,7 +52,7 @@ const Header = () => {
                                     <Link href="/"><a className="nav-link" aria-current="page">Home</a></Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="#"><a className="nav-link" >About Us</a></Link>
+                                    <Link href="/about-us"><a className="nav-link" >About Us</a></Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link href="#"><a className="nav-link" >Service</a></Link>

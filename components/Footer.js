@@ -112,7 +112,7 @@ const Footer = () => {
                                         <Link href="/"><a className="nav-link" aria-current="page">Home</a></Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link href="#"><a className="nav-link" >About Us</a></Link>
+                                        <Link href="/about-us"><a className="nav-link" >About Us</a></Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link href="#"><a className="nav-link" >Contact Us</a></Link>
