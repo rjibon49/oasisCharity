@@ -12,7 +12,7 @@ import WorkProcess from '../components/HomePage/WorkProcess'
 import EduAndCareer from '../components/HomePage/EduAndCareer'
 import Volunteer from '../components/HomePage/Volunteer'
 import JoinCommiunity from '../components/HomePage/JoinCommiunity'
-import Team from '../components/HomePage/Team'
+import Team from '../components/globalComponents/Team'
 
 
 export default function Home() {
