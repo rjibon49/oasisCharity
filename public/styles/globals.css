@@ -92,6 +92,11 @@ ul, li {
   background-image: url(../images/content/doctorTypingKeyboard.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.contactBg {
+  background-image: url(../images/content/contactPageImage.png);
+  background-size: 100% 100%;
 }
 .custom-list {
   list-style-type: disc; /* Set bullet point style */
@@ -214,6 +219,13 @@ ul, li {
 /* .formPadding {
   padding: 50px;
 } */
+.contactPageBg {
+  border-radius: 57px;
+  background: #F9FFFC;
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.12);
+  max-width: 500px;
+}
+
 
 
 
@@ -436,7 +448,7 @@ ul, li {
   .footerTextWidth {
     max-width: 80%;
   }
-  .contactFormBg {
+  .contactFormBg, .contactPageBg {
     margin: 0 auto;
   }
   /* ================ Fonts CSS Style ==================== */
