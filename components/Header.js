@@ -64,7 +64,7 @@ const Header = () => {
                                     <Link href="/contact"><a className="nav-link">Contact</a></Link>
                                 </li>
                                 <li className=" buttoncolor nav-item">
-                                    <Link href="#"><a className="buttonStyle" >Login</a></Link>
+                                    <Link href="/login"><a className="buttonStyle" >Login</a></Link>
                                 </li>
                                 <li className=" buttoncolor nav-item">
                                     <Link href="#"><a className="buttonStyle" >Get Appointment</a></Link>

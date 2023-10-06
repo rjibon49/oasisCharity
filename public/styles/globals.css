@@ -226,7 +226,17 @@ ul, li {
   max-width: 500px;
 }
 
-
+.loginButton {
+  width: 75%;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  background: #F27E55;
+  border-radius: 100px;
+  border: none;
+  color: white;
+  padding: 15px 0px;
+}
 
 
 /* ================ Color CSS Style ====================
