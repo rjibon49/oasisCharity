@@ -15,9 +15,7 @@ const JoinCommiunity = () => {
                         <div>
                             <h3 className='text40 mb-3'>Join Our Learning Community</h3>
                             <h6 className='text18 mb-3'>Courses are free for all of our students.  We may have grants to support workforce develop, reach out to us if you are interested in Internship program.  We are working on a missionary program to help those in need around the world.  </h6>
-                            <button className="  buttonStyleGreen">
-                                Join Now
-                            </button>
+                            <Link href="/registration"><a className="buttonStyleGreen" >join Now</a></Link>
                         </div>
                     </div>
                 </div>

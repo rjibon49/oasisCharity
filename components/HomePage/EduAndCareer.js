@@ -1,6 +1,7 @@
 import React from 'react';
 import study from "../../public/images/content/groupStudy.png";
 import Image from 'next/image';
+import Link from 'next/link';
 
 const EduAndCareer = () => {
     return (
@@ -11,7 +12,8 @@ const EduAndCareer = () => {
                         <div className='mb-5'>
                             <h3 className='text40 pb-2'>Education & Career Advancement Courses</h3>
                             <p className='text18 pb-2'>Learn from our expert and learn professional skills to start a career and use to help others.  Please a look at our courses, they are free for our students.</p>
-                            <button type="submit" className="buttonStyleGreen">Enroll Now</button>
+                            {/* <button type="submit" className="buttonStyleGreen">Enroll Now</button> */}
+                            <Link href="/registration"><a className="buttonStyleGreen" >Enroll Now</a></Link>
                         </div>
                     </div>
                     <div className='col-xxl-7 col-xl-7 col-lg-7 textCenter'>

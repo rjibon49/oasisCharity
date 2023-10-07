@@ -18,9 +18,7 @@ const AboutUs = () => {
                                 <li className='text24'>Mental Health</li>
                                 <li className='text24'>Qualified Doctors </li>
                             </ul>
-                            <button className="  buttonStyle">
-                                <Link href="#"><a className="buttoncolor" >Contact Us</a></Link>
-                            </button>
+                            <Link href="/contact"><a className="linkStyle" >Contact Us</a></Link>
                         </div>
                     </div>
                     <div className='col-xxl-6 col-xl-6 col-lg-6'>

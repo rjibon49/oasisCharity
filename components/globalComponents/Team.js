@@ -4,6 +4,7 @@ import anthony from "../../public/images/content/Anthony_Nguyen.png";
 import huma from "../../public/images/content/huma_javed.png";
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Team = () => {
     return (
@@ -69,7 +70,7 @@ const Team = () => {
                                 <div className='d-flex align-item-center gap-3'>
                                     <button type="button" className="buttonStyle" data-bs-toggle="modal" data-bs-target="#humaJaved"> Know More </button>
                                     {/* <FontAwesomeIcon icon={faEnvelope} className='iconColor' /> */}
-                                    <i className="fa-regular fa-envelope iconColor" ></i>
+                                    <Link href="mailto:huma@oasischarity.org"><a><i className="fa-regular fa-envelope iconColor" ></i></a></Link>
                                 </div>
                             
                                 {/* <!-- Modal --> */}
@@ -90,7 +91,7 @@ const Team = () => {
                                                 As Vice President of Compliance and Grants, Huma assumes a pivotal role in overseeing all facets of the organization's operations, including development-focused research, project-based communication, compliance and business planning. Huma brings a wealth of expertise to the domains of proposal development and project-based communication. With an impressive tenure spanning over six years in development-focused research, Huma's influence at Oasis Charity reached new heights when she embraced the role of Grant Proposal Writer. In this capacity, she exhibited exceptional proficiency in efficiently and effectively securing grants. Her unwavering dedication and strategic prowess in grant procurement significantly enriched the organization. Throughout her tenure, Huma has been deeply immersed in the art of proposal development, actively nurturing client relationships, and fostering open channels of communication. She firmly believes in the transformative power of teamwork and collaboration, viewing them as indispensable tools for overcoming challenges and realizing ambitious goals. Her personal goal is to advances the organizations overall but with a passion with her people of Pakistan. <br />
                                                 Her guiding principle echoes the wisdom of John C. Maxwell: "Success is not a destination; it's a journey that requires adaptability, determination, and a great team working together towards a common vision." <br /> <br />
                                                 Contact Details <br />
-                                                Email: - huma@oasischarity.org
+                                                Email: - <Link href="mailto:huma@oasischarity.org"><a>huma@oasischarity.org </a></Link>
                                             </div>
                                             <div className="modal-footer">
                                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
