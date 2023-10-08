@@ -14,7 +14,7 @@ ul, li {
 }
 .linkStyle {
   border-radius: 40px;
-  border: 1px solid #48B580;
+  border: none;
   padding: 10px 30px;
   transition: 0.3s;
   background: linear-gradient(180deg, #FFA262 -18.42%, #F07953 100%);
@@ -25,7 +25,7 @@ ul, li {
 }
 .buttonStyle {
   border-radius: 40px;
-  border: 1px solid #48B580;
+  border: none;
   padding: 10px 30px;
   transition: 0.3s;
   background: linear-gradient(180deg, #FFA262 -18.42%, #F07953 100%);
@@ -37,7 +37,7 @@ ul, li {
 .linkStyle:hover {
   background: linear-gradient(180deg, #48B580 -28.07%, #3EAAA1 100%);
   color: white;
-  border: 1px solid #FFA262;
+  /* border: 1px solid #FFA262; */
 }
 .buttonStyle:hover {
   background: linear-gradient(180deg, #48B580 -28.07%, #3EAAA1 100%);
@@ -377,12 +377,14 @@ ul, li {
 }
 .form-control, .form-select {
   border-radius: 100px;
-  border: 1px solid #363636;
+  border: 1px solid #363636a8;
+  background-color: transparent;
 }
 .textArea-control {
   width: 100%;
   border-radius: 10px;
-  border: 1px solid #D4D4D4;
+  border: 1px solid #363636a8;
+  background-color: transparent;
 }
 .formWidth {
   width: 85%;
@@ -482,6 +484,65 @@ ul, li {
   background: #8bb9b9;
   border-radius: 50%;
 }
+
+/* ================ Custom Slider Design CSS Style ====================
+====================================================================*/
+/* styles/CustomSlider.module.css */
+.slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.slidesContainer {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pagination button {
+  background-color: #aaa;
+  border: none;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #333;
+}
+
 
 /* ================ Responsive Design CSS Style ====================
 ====================================================================*/
