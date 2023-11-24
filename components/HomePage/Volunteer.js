@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Volunteer = () => {
     return (
-        <div className='mt-5 volunteerBg'>
+        <div className='my-5 volunteerBg'>
             <div className='container'>
                 <div className='row revarce'>
                     <div className='col-xxl-7 col-xl-7 col-lg-7 volunteerText'>

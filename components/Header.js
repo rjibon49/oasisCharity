@@ -30,7 +30,7 @@ const Header = () => {
                 <div className='container'>
                     <div className='d-flex justify-content-between align-items-center'>
                         <div className='headerIconWidth py-3'>
-                            <select id="inputState" className="headerCountrySelect">
+                            <select id="inputStateCountry" className="headerCountrySelect">
                                 <option selected>United State</option>
                                 <option>Span</option>
                                 <option>Bangladesh</option>
@@ -38,16 +38,16 @@ const Header = () => {
                             </select>
                         
                             <div className='d-flex flex-wrap justify-content-between gap-2 pt-3'>
-                                <i class="fa-brands fa-facebook headerIcon"></i>
-                                <i class="fa-brands fa-instagram headerIcon"></i>
-                                <i class="fa-brands fa-linkedin headerIcon"></i>
-                                <i class="fa-brands fa-youtube headerIcon"></i>
-                                <i class="fa-brands fa-pinterest headerIcon"></i>
-                                <i class="fa-brands fa-twitter headerIcon"></i>
+                                <i className="fa-brands fa-facebook headerIcon"></i>
+                                <i className="fa-brands fa-instagram headerIcon"></i>
+                                <i className="fa-brands fa-linkedin headerIcon"></i>
+                                <i className="fa-brands fa-youtube headerIcon"></i>
+                                <i className="fa-brands fa-pinterest headerIcon"></i>
+                                <i className="fa-brands fa-twitter headerIcon"></i>
                             </div>
                         </div>
                         <div className=''>
-                            <select id="inputState" className="headerCountrySelect">
+                            <select id="inputStateLanguage" className="headerLanguageSelect">
                                 <option selected>English</option>
                                 <option>Spanish</option>
                                 <option>Bangla</option>

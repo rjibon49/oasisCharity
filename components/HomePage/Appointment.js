@@ -5,7 +5,7 @@ import AppointmentForm from '../globalComponents/AppointmentForm';
 
 const Appointment = () => {
     return (
-        <div className='mt-5 appointmentBg'>
+        <div className='my-5 appointmentBg'>
             <div className='container'>
                 <div className='row'>
                     <div className='col-xxl-6 col-xl-6 col-lg-6 col-md-5'>

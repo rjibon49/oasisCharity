@@ -1,7 +1,7 @@
 
 const AppointmentForm = () => {
     return (
-        <form className="row g-4 formWidth">
+        <form className="row g-5 formWidth">
             <div className="col-md-6">
                 <input type="text" className="form-control" id="inputEmail4" placeholder="First Name" />
             </div>

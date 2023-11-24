@@ -160,13 +160,14 @@ ul, li {
 
 .serviceBody {
   display: grid;
-  grid-template-columns: 48% 2% 48%;
-  gap: 5px;
+  grid-template-columns: 49% 2% 49%;
+  gap: 20px;
   padding: 50px;
+  margin: 25px;
 }
-.serviceWidth {
+/* .serviceWidth {
   width: 70%;
-}
+} */
 .DoctorImageBg {
   border-radius: 10px;
   background: #FFF;
@@ -211,7 +212,7 @@ ul, li {
 .headerIcon {
   color: white;
 }
-.headerCountrySelect {
+.headerCountrySelect, .headerLanguageSelect {
   border: none;
   background: #363636;
   color: white;

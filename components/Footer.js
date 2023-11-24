@@ -104,7 +104,7 @@ const Footer = () => {
                         <div>
                             <div className=' mb-3'>
                                 <label htmlFor="subscribe" className='text24'>Subscribe</label>
-                                <input type="text" className="subscribeInput" id="subscribe" placeholder="Emaile" />
+                                <input type="text" className="subscribeInput" id="subscribe" placeholder="Email" />
                             </div>
                             <div className='py-5 footerMenu'>
                                 <ul className="navbar-nav mb-2 mb-lg-0">
@@ -128,12 +128,12 @@ const Footer = () => {
                 <div className='pb-5'>
                     <p className='text14'>Follow us on social:</p>
                     <div className='d-flex flex-wrap gap-2'>
-                        <i class="fa-brands fa-facebook footerIcon"></i>
-                        <i class="fa-brands fa-instagram footerIcon"></i>
-                        <i class="fa-brands fa-linkedin footerIcon"></i>
-                        <i class="fa-brands fa-youtube footerIcon"></i>
-                        <i class="fa-brands fa-pinterest footerIcon"></i>
-                        <i class="fa-brands fa-twitter footerIcon"></i>
+                        <i className="fa-brands fa-facebook footerIcon"></i>
+                        <i className="fa-brands fa-instagram footerIcon"></i>
+                        <i className="fa-brands fa-linkedin footerIcon"></i>
+                        <i className="fa-brands fa-youtube footerIcon"></i>
+                        <i className="fa-brands fa-pinterest footerIcon"></i>
+                        <i className="fa-brands fa-twitter footerIcon"></i>
                     </div>
                 </div>
                 <div className='footerBottomLine'></div>

@@ -5,7 +5,7 @@ import Image from 'next/image';
 const OurMission = () => {
     return (
         <>
-            <div className='mt-5 bgImage'>
+            <div className='my-5 py-5 bgImage'>
                 <div className='container'>
                     <div className='row'>
                         <div className='col-xxl-6 col-xl-6 col-lg-6'>

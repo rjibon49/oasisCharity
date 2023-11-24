@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const Team = () => {
     return (
-        <div className='mt-5 colorBg py-5'>
+        <div className='my-5 colorBg py-5'>
             <div className='container'>
                 <div className='text-center'>
                     <p className='colorFont mb-3'>Experienced</p>
@@ -25,10 +25,10 @@ const Team = () => {
                                     <p className='text18'>Dung 'Anthony' Nguyen is a Co-Founder and Chief Operations Officer of FWFA. Anthony was awarded a bachelor’s in accounting from California State University, San Bernardino.</p>
                                     <div className='d-flex align-item-center gap-3 flex-wrap'>
                                         <button type="button" className="buttonStyle" data-bs-toggle="modal" data-bs-target="#anthony"> Know More </button>
-                                        <i class="fa-brands fa-facebook iconColor"></i>
-                                        <i class="fa-brands fa-linkedin iconColor"></i>
-                                        <i class="fa-brands fa-skype iconColor"></i>
-                                        <i class="fa-brands fa-instagram iconColor"></i>
+                                        <i className="fa-brands fa-facebook iconColor"></i>
+                                        <i className="fa-brands fa-linkedin iconColor"></i>
+                                        <i className="fa-brands fa-skype iconColor"></i>
+                                        <i className="fa-brands fa-instagram iconColor"></i>
                                     </div>
                                 
                                     {/* <!-- Modal --> */}

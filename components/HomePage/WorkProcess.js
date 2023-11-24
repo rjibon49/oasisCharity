@@ -7,7 +7,7 @@ import Image from "next/image";
  
 const WorkProcess = () => {
     return (
-        <div className="mt-5 secondColorBg">
+        <div className="my-5 py-5 secondColorBg">
             <div className="container py-5">
                 <div className="text-center py-5">
                     <h5 className="colorFont">Working Process</h5>
