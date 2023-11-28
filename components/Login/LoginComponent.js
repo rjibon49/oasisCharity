@@ -1,9 +1,35 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect } from 'react';
 import loginImage from "../../public/images/content/loginPageImage.png";
 import Link from 'next/link';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const LoginComponent = () => {
+
+    useEffect(() => {
+        // Assuming you have a message in the query parameter after redirect
+        const queryParams = new URLSearchParams(window.location.search);
+        const message = queryParams.get('message');
+    
+        if (message) {
+          toast.success(message);
+        }
+      }, []);
+      
+//       <ToastContainer
+//         position="top-right"
+//         autoClose={5000}
+//         hideProgressBar={false}
+//         newestOnTop={false}
+//         closeOnClick
+//         rtl={false}
+//         pauseOnFocusLoss
+//         draggable
+//         pauseOnHover
+//         theme="dark"
+//   />
+
     return (
         <div>
             <div className='container py-5'>
@@ -41,6 +67,7 @@ const LoginComponent = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
