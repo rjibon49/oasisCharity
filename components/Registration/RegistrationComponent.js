@@ -55,7 +55,7 @@ const RegistrationComponent = () => {
               password: '',
               confirmPassword: '',
             });
-            router.push('/login?message=Registration successful. Please log in.');
+            router.push('/thank-you?message=Registration successful.');
           } else {
             // Handle registration error
             handleRegistrationError(response);

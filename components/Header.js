@@ -4,6 +4,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
+import { useRouter } from 'next/router';
+import { useDispatch, useSelector } from "react-redux";
+import { LogOut, reset } from '../features/authSlice';
+
 const Header = () => {
 
     const [isSticky, setIsSticky] = useState(false);
@@ -22,6 +26,18 @@ const Header = () => {
         window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const router = useRouter();
+    const dispatch = useDispatch();
+    const { user, isError, isSuccess, isLoading, message } = useSelector(
+        (state) => state.auth
+      );
+    
+      const logout = () => {
+        dispatch(LogOut());
+        dispatch(reset());
+        router.push("/");
+      };
 
 
     return (
@@ -82,12 +98,33 @@ const Header = () => {
                             <li className="nav-item">
                                 <Link href="/contact"><a className="nav-link">Contact</a></Link>
                             </li>
-                            <li className="nav-item">
-                                <Link href="/login"><a className="linkStyle" >Login</a></Link>
-                            </li>
-                            <li className=" nav-item">
-                                <Link href="/registration"><a className="linkStyle" >Get Appointment</a></Link>
-                            </li>
+                            {user && user.email ? (
+                                <>
+                                {/* If user is logged in, show Logout */}
+                                <li className="nav-item">
+                                    <button className="linkStyle" onClick={logout}>
+                                    Logout
+                                    </button>
+                                </li>
+                                </>
+                            ) : (
+                                <>
+                                {/* If user is not logged in, show Login and Get Appointment */}
+                                <li className="nav-item">
+                                    <Link href="/login">
+                                    <a className="linkStyle">Login</a>
+                                    </Link>
+                                </li>
+                                <li className=" nav-item">
+                                    <Link href="/registration">
+                                    <a className="linkStyle">Get Appointment</a>
+                                    </Link>
+                                </li>
+                                </>
+                            )}
+                            {
+                                    user && <li className="fw-bold nav-item text-center">{user.username}</li>
+                                }
                         </ul>
                     </div>
                 </nav>

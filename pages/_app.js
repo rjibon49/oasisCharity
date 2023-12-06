@@ -2,6 +2,8 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import Head from 'next/head';
 import Script from 'next/script';
 import '/public/styles/globals.css'
+import { Provider } from 'react-redux';
+import { store } from '../store/store';
 
 export default function App({ Component, pageProps }) {
   return <>
@@ -24,6 +26,10 @@ export default function App({ Component, pageProps }) {
       id="bootstrap-cdn"
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" />
   <Script src="https://kit.fontawesome.com/a54f1db03d.js" crossOrigin="anonymous" />
-    <Component {...pageProps} />
+
+    {/* application with the Redux Provider */}
+    <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
   </>
 }
