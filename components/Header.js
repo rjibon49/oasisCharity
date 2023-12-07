@@ -98,6 +98,9 @@ const Header = () => {
                             <li className="nav-item">
                                 <Link href="/contact"><a className="nav-link">Contact</a></Link>
                             </li>
+                            { user && <li className="nav-item">
+                                <Link href="/dashboard"><a className="nav-link">Dashboard</a></Link>
+                            </li>}
                             {user && user.email ? (
                                 <>
                                 {/* If user is logged in, show Logout */}
@@ -122,9 +125,7 @@ const Header = () => {
                                 </li>
                                 </>
                             )}
-                            {
-                                    user && <li className="fw-bold nav-item text-center">{user.username}</li>
-                                }
+                                { user && <li className="fw-bold nav-item text-center">{user.username}</li> }
                         </ul>
                     </div>
                 </nav>
