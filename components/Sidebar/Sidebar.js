@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { useRouter } from 'next/router';
-import { LogOut, reset } from '../../features/authSlice';
+// import { useDispatch, useSelector } from 'react-redux';
+// import { useRouter } from 'next/router';
+// import { LogOut, reset } from '../../features/authSlice';
 import Link from 'next/link';
 
 const Sidebar = () => {
-    const dispatch = useDispatch();
-    const router = useRouter();
-    const { user} = useSelector((state) => state.auth);
+    // const dispatch = useDispatch();
+    // const router = useRouter();
+    // const { user} = useSelector((state) => state.auth);
 
-    const logout = () => {
-        dispatch(LogOut());
-        dispatch(reset());
-        router.push("/login");
-      };
+    // const logout = () => {
+    //     dispatch(LogOut());
+    //     dispatch(reset());
+    //     router.push("/login");
+    //   };
 
     return (
         <div>
@@ -23,9 +23,9 @@ const Sidebar = () => {
                                 <Link href="/contact"><a className="nav-link">Contact</a></Link>
                             </li>
                     <li>
-                        <button onClick={logout} className="button">
+                        {/* <button onClick={logout} className="button">
                          Logout
-                        </button>
+                        </button> */}
                     </li>
                 </ul>
         </div>

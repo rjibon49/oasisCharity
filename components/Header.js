@@ -1,44 +1,45 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Image from 'next/image';
 import logo from "../public/images/logo/oasisLogo.png";
 import Link from 'next/link';
-import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
-import { useRouter } from 'next/router';
-import { useDispatch, useSelector } from "react-redux";
 import { LogOut, reset } from '../features/authSlice';
+import { useDispatch, useSelector } from "react-redux";
+import { useRouter } from 'next/router';
 
 const Header = () => {
-
+    
     const [isSticky, setIsSticky] = useState(false);
 
     const handleScroll = () => {
         if (window.scrollY > 100) {
-        setIsSticky(true);
+            setIsSticky(true);
         } else {
-        setIsSticky(false);
+            setIsSticky(false);
         }
     };
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
-        window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
+
     const router = useRouter();
+
     const dispatch = useDispatch();
     const { user, isError, isSuccess, isLoading, message } = useSelector(
         (state) => state.auth
       );
-    
-      const logout = () => {
+    const logout = () => {
         dispatch(LogOut());
         dispatch(reset());
         router.push("/");
       };
-
+    // console.log('Session in Component:', session);
 
     return (
         <>
@@ -98,34 +99,33 @@ const Header = () => {
                             <li className="nav-item">
                                 <Link href="/contact"><a className="nav-link">Contact</a></Link>
                             </li>
-                            { user && <li className="nav-item">
-                                <Link href="/dashboard"><a className="nav-link">Dashboard</a></Link>
-                            </li>}
-                            {user && user.email ? (
+                            { user && user.email ? (
                                 <>
-                                {/* If user is logged in, show Logout */}
-                                <li className="nav-item">
-                                    <button className="linkStyle" onClick={logout}>
-                                    Logout
-                                    </button>
-                                </li>
+                                    <li className="nav-item">
+                                        <Link href="/dashboard"><a className="nav-link">Dashboard</a></Link>
+                                    </li>
+                                    
+                                    <li className="fw-bold nav-item text-center">{user.username}</li>
+                                    <li className="nav-item">
+                                        <button className="linkStyle" onClick={logout}>
+                                            Logout
+                                        </button>
+                                    </li>
                                 </>
                             ) : (
                                 <>
-                                {/* If user is not logged in, show Login and Get Appointment */}
-                                <li className="nav-item">
-                                    <Link href="/login">
-                                    <a className="linkStyle">Login</a>
-                                    </Link>
-                                </li>
-                                <li className=" nav-item">
-                                    <Link href="/registration">
-                                    <a className="linkStyle">Get Appointment</a>
-                                    </Link>
-                                </li>
+                                    <li className="nav-item">
+                                        <Link href="/login">
+                                            <a className="linkStyle">Login</a>
+                                        </Link>
+                                    </li>
+                                    <li className=" nav-item">
+                                        <Link href="/registration">
+                                            <a className="linkStyle">Get Appointment</a>
+                                        </Link>
+                                    </li>
                                 </>
                             )}
-                                { user && <li className="fw-bold nav-item text-center">{user.username}</li> }
                         </ul>
                     </div>
                 </nav>
@@ -135,3 +135,22 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
+
+// import { useRouter } from 'next/router';
+// import { useDispatch, useSelector } from "react-redux";
+// import { LogOut, reset } from '../features/authSlice';
+    // const router = useRouter();
+    // const dispatch = useDispatch();
+    // const { user, isError, isSuccess, isLoading, message } = useSelector(
+    //     (state) => state.auth
+    //   );
+    
+    //   const logout = () => {
+    //     dispatch(LogOut());
+    //     dispatch(reset());
+    //     router.push("/");
+    //   };

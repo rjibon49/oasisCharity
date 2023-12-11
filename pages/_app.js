@@ -2,8 +2,12 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import Head from 'next/head';
 import Script from 'next/script';
 import '/public/styles/globals.css'
-import { Provider } from 'react-redux';
+import { Provider } from "react-redux";
 import { store } from '../store/store';
+import axios from "axios";
+import { SessionProvider } from 'next-auth/react';
+
+axios.defaults.withCredentials = true;
 
 export default function App({ Component, pageProps }) {
   return <>
@@ -27,9 +31,10 @@ export default function App({ Component, pageProps }) {
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" />
   <Script src="https://kit.fontawesome.com/a54f1db03d.js" crossOrigin="anonymous" />
 
-    {/* application with the Redux Provider */}
-    <Provider store={store}>
+    <SessionProvider session={pageProps.session}>
+      <Provider store={store}>
         <Component {...pageProps} />
       </Provider>
+    </SessionProvider>
   </>
 }

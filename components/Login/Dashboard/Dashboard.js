@@ -1,12 +1,9 @@
-import Head from 'next/head';
-import SidebarLayout from '../../components/SidebarLayout';
-import Dashboard from '../../components/Login/Dashboard/Dashboard';
-// import { useEffect } from 'react';
 // import { useRouter } from 'next/router';
+import React, { useEffect } from 'react';
 // import { useDispatch, useSelector } from 'react-redux';
-// import { getMe } from '../../features/authSlice';
+// import { getMe } from '../../../features/authSlice';
 
-const index = () => {
+const Dashboard = () => {
     // const dispatch = useDispatch();
     // const router = useRouter();
     // const { isError, isLoading, user, message } = useSelector((state) => state.auth);
@@ -29,23 +26,11 @@ const index = () => {
     //     // You can return a loading indicator or any other UI while authentication status is being checked
     //     return <div>Loading...</div>;
     // }
-
     return (
-        <>
-            <Head>
-                <title>Dashboard</title>
-                <meta name="description" content="Dashboard" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
-            <div>
-                <SidebarLayout>
-                    <div className='my-5'>
-                        <Dashboard />
-                    </div>
-                </SidebarLayout>
-            </div>
-        </>
+        <div>
+            <h1 className='text-center'>Welcome to Dashboard</h1>
+        </div>
     );
 };
 
-export default index;
+export default Dashboard;

@@ -2,34 +2,34 @@ import React, { useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Sidebar from './Sidebar/Sidebar';
-import { useDispatch, useSelector } from 'react-redux';
-import { useRouter } from 'next/router';
-import { getMe } from '../features/authSlice';
+// import { useDispatch, useSelector } from 'react-redux';
+// import { useRouter } from 'next/router';
+// import { getMe } from '../features/authSlice';
 
 const SidebarLayout = ({children}) => {
 
-    const dispatch = useDispatch();
-    const router = useRouter();
-    const { user,isError, isLoading } = useSelector((state) => state.auth);
+    // const dispatch = useDispatch();
+    // const router = useRouter();
+    // const { user,isError, isLoading } = useSelector((state) => state.auth);
 
-    useEffect(() => {
-        dispatch(getMe());
-        console.log(getMe())
-    }, [dispatch]);
+    // useEffect(() => {
+    //     dispatch(getMe());
+    //     console.log(getMe())
+    // }, [dispatch]);
 
-    useEffect(() => {
-        if (isError) {
-            console.error("Error fetching user information:", isError);
-            // You can show an error message or redirect to the homepage with an error message
-            router.push("/login");
-        }
-    }, [isError, router]);
+    // useEffect(() => {
+    //     if (isError) {
+    //         console.error("Error fetching user information:", isError);
+    //         // You can show an error message or redirect to the homepage with an error message
+    //         router.push("/login");
+    //     }
+    // }, [isError, router]);
     
 
-    if (isLoading) {
-        // You can return a loading indicator or any other UI while authentication status is being checked
-        return <div>Loading...</div>;
-    }
+    // if (isLoading) {
+    //     // You can return a loading indicator or any other UI while authentication status is being checked
+    //     return <div>Loading...</div>;
+    // }
 
     return (
         <>
