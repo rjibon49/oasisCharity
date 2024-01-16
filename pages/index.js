@@ -13,17 +13,15 @@ import EduAndCareer from '../components/HomePage/EduAndCareer';
 import Volunteer from '../components/HomePage/Volunteer';
 import JoinCommiunity from '../components/HomePage/JoinCommiunity';
 import Team from '../components/globalComponents/Team';
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from 'react-redux';
 import { getMe } from '../features/authSlice';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
 
-
 export default function Home() {
-  const router = useRouter();
-
   const dispatch = useDispatch();
+  const router = useRouter();
     const { isError } = useSelector((state) => state.auth);
 
     useEffect(() => {
@@ -32,7 +30,7 @@ export default function Home() {
 
     useEffect(() => {
         if (isError) {
-          router.push("/login");
+          router.push("/");
         }
     }, [isError, router]);
 
