@@ -21,9 +21,8 @@ const Header = () => {
     const logout = () => {
         dispatch(logOut());
         dispatch(reset());
-        router.push("/");
+        router.push("/login");
     };
-    console.log(user);
 
     return (
         <>

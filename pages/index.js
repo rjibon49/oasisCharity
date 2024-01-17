@@ -21,18 +21,27 @@ import { useEffect } from 'react';
 
 export default function Home() {
   const dispatch = useDispatch();
-  const router = useRouter();
+    const router = useRouter();
     const { isError } = useSelector((state) => state.auth);
 
     useEffect(() => {
-        dispatch(getMe());
+        const fetchUserData = async () => {
+            try {
+                await dispatch(getMe());
+                // You can perform any additional actions here if needed
+            } catch (error) {
+                // Handle errors
+            }
+        };
+
+        fetchUserData();
     }, [dispatch]);
 
-    useEffect(() => {
-        if (isError) {
-          router.push("/");
-        }
-    }, [isError, router]);
+    // useEffect(() => {
+    //     if (isError) {
+    //         router.push("/");
+    //     }
+    // }, [isError, router]);
 
   return (
     <>

@@ -6,7 +6,6 @@ import googleIcon from "../../public/images/content/Google-Original.png";
 import Link from 'next/link';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 // Import Font Awesome icons in your component
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';

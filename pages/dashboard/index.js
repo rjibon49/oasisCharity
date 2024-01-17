@@ -1,34 +1,13 @@
 import Head from 'next/head';
 import SidebarLayout from '../../components/SidebarLayout';
-import Dashboard from '../../components/Login/Dashboard/Dashboard';
-// import { useEffect } from 'react';
-// import { useRouter } from 'next/router';
+import Dashboard from '../../components/Dashboard/Dashboard';
 // import { useDispatch, useSelector } from 'react-redux';
+// import { useRouter } from 'next/router';
+// import { useEffect } from 'react';
 // import { getMe } from '../../features/authSlice';
 
-const index = () => {
-    // const dispatch = useDispatch();
-    // const router = useRouter();
-    // const { isError, isLoading, user, message } = useSelector((state) => state.auth);
-
-    // useEffect(() => {
-    //     dispatch(getMe());
-    //     console.log(getMe())
-    // }, [dispatch]);
-
-    // useEffect(() => {
-    //     if (isError) {
-    //         console.error("Error fetching user information:", isError);
-    //         // You can show an error message or redirect to the homepage with an error message
-    //         router.push("/login");
-    //     }
-    // }, [isError, router, message]);
+const Index = () => {
     
-
-    // if (isLoading) {
-    //     // You can return a loading indicator or any other UI while authentication status is being checked
-    //     return <div>Loading...</div>;
-    // }
 
     return (
         <>
@@ -48,4 +27,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default Index;

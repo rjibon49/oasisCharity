@@ -9,24 +9,36 @@ import loginImage from "../../public/images/content/loginPageImage.png";
 import { loginUser, reset } from '../../features/authSlice';
 
 const LoginComponent = () => {
-  const [identifier, setIdentifier] = useState("");
-  const [password, setPassword] = useState("");
+  const { user, isSuccess } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
   const router = useRouter();
-  const { user, isSuccess } = useSelector((state) => state.auth);
+
+  const Auth = async (e) => {
+    e.preventDefault();
+
+    const { identifier, password } = e.target.elements;
+
+    try {
+      await dispatch(loginUser({ identifier: identifier.value, password: password.value }));
+
+      // Reset the auth state
+      dispatch(reset());
+
+      // Redirect to the home page on successful login
+      router.push("/");
+    } catch (error) {
+      console.error('Login error:', error);
+      toast.error('Failed to login. Please try again.');
+    }
+  };
 
   useEffect(() => {
+    // If user is authenticated or login is successful, redirect to home
     if (user || isSuccess) {
       router.push("/");
+      dispatch(reset());
     }
-    dispatch(reset());
   }, [user, isSuccess, dispatch, router]);
-
-  const Auth = (e) => {
-    e.preventDefault();
-    dispatch(loginUser({ identifier, password }));
-  };
-  console.log(user);
 
   return (
     <div>
@@ -43,8 +55,6 @@ const LoginComponent = () => {
                     id="identifier"
                     placeholder="Email/Username"
                     required
-                    value={identifier}
-                    onChange={(e) => setIdentifier(e.target.value)}
                   />
                   <i className="far fa-envelope iconPosition"></i>
                 </div>
@@ -57,8 +67,6 @@ const LoginComponent = () => {
                       id="password"
                       placeholder="******"
                       required
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
                     />
                     <div className="input-group-append">
                       <button

@@ -2,28 +2,28 @@ import React, { useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Sidebar from './Sidebar/Sidebar';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { useRouter } from 'next/router';
-// import { getMe } from '../features/authSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { useRouter } from 'next/router';
+import { getMe } from '../features/authSlice';
 
 const SidebarLayout = ({children}) => {
 
-    // const dispatch = useDispatch();
-    // const router = useRouter();
-    // const { user,isError, isLoading } = useSelector((state) => state.auth);
+    const dispatch = useDispatch();
+    const router = useRouter();
+    const { isError } = useSelector((state) => state.auth);
 
-    // useEffect(() => {
-    //     dispatch(getMe());
-    //     console.log(getMe())
-    // }, [dispatch]);
+    useEffect(() => {
+        const fetchUserData = async () => {
+            try {
+                await dispatch(getMe());
+                // You can perform any additional actions here if needed
+            } catch (error) {
+                // Handle errors
+            }
+        };
 
-    // useEffect(() => {
-    //     if (isError) {
-    //         console.error("Error fetching user information:", isError);
-    //         // You can show an error message or redirect to the homepage with an error message
-    //         router.push("/login");
-    //     }
-    // }, [isError, router]);
+        fetchUserData();
+    }, [dispatch]);
     
 
     // if (isLoading) {
@@ -33,10 +33,10 @@ const SidebarLayout = ({children}) => {
 
     return (
         <>
-            <Header />
+            {/* <Header /> */}
                 <>
                     <div className='row' style={{minHeight: "100vh"}}>
-                        <div className='col-md-12'>
+                        <div className='col-md-2'>
                             <Sidebar />
                         </div>
                         <div className='col-md-10'>
@@ -44,7 +44,7 @@ const SidebarLayout = ({children}) => {
                         </div>
                     </div>
                 </>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };
