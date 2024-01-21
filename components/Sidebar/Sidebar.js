@@ -24,6 +24,12 @@ const Sidebar = () => {
                         <Link href="/dashboard/profile/doctor/createprofile"><a className="nav-link">Create Profile</a></Link>
                     </li>
                     <li className="nav-item">
+                        <Link href="/dashboard/profile/doctor/updateprofile/[id]" as={`/dashboard/profile/doctor/updateprofile/${user?.doctorProfileId}`}>
+                            <a className="nav-link">Update Profile</a>
+                        </Link>
+
+                    </li>
+                    <li className="nav-item">
                         <Link href="/dashboard/user/adduser"><a className="nav-link">Add User</a></Link>
                     </li>
                     <li className="nav-item" style={{cursor:"pointer"}}>

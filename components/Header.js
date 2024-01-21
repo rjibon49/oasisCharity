@@ -87,8 +87,11 @@ const Header = () => {
                                     <li className="nav-item">
                                         <Link href="/dashboard"><a className="nav-link">Dashboard</a></Link>
                                     </li>
+                                    {console.log('User Data:', user)}
+                                    {user && (
+                                        <li className="fw-bold nav-item text-center">{user.DoctorProfile.name}</li>
+                                        )}
 
-                                    {user && <li className="fw-bold nav-item text-center">{`${user.username} ${user.email}`}</li>}
                                     <li className="nav-item">
                                         <button className="linkStyle" onClick={logout}>
                                             Logout
