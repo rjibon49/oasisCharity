@@ -30,6 +30,7 @@ const RegistrationComponent = () => {
         />
 
     const [formData, setFormData] = useState({
+        name: '',
         username: '',
         email: '',
         password: '',
@@ -49,6 +50,7 @@ const RegistrationComponent = () => {
           if (response.status >= 200 && response.status < 300) {
             // toast.success('Registration Successful');
             setFormData({
+              name: '',
               username: '',
               email: '',
               password: '',
@@ -92,6 +94,11 @@ const RegistrationComponent = () => {
                     <div className='col-xxl-6 col-xl-6 col-lg-6 textCenter'>
                         <div>
                             <form className="row g-4 p-5" onSubmit={handleSubmit}>
+                                <div className="col-md-12 position-relative">
+                                    <label htmlFor="name" className='text24 mb-2'>Full Name</label>
+                                    <input type="text" className="form-control" id='name' placeholder="Full Name" name="name" value={formData.name} onChange={handleChange} />
+                                    <i className="fa-regular fa-user iconPosition"></i>
+                                </div>
                                 <div className="col-md-12 position-relative">
                                     <label htmlFor="userName" className='text24 mb-2'>Username</label>
                                     <input type="text" className="form-control" id='userName' placeholder="username" name="username" value={formData.username} onChange={handleChange} />

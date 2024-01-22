@@ -89,7 +89,7 @@ const Header = () => {
                                     </li>
                                     {console.log('User Data:', user)}
                                     {user && (
-                                        <li className="fw-bold nav-item text-center">{user.DoctorProfile.name}</li>
+                                        <li className="fw-bold nav-item text-center">{user.name}</li>
                                         )}
 
                                     <li className="nav-item">

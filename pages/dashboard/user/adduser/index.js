@@ -20,6 +20,7 @@ const Index = () => {
         />
 
     const [formData, setFormData] = useState({
+        name: '',
         username: '',
         email: '',
         password: '',
@@ -39,11 +40,12 @@ const Index = () => {
       
           if (response && response.status && response.status >= 200 && response.status < 300) {
             setFormData({
+              name: '',
               username: '',
               email: '',
               password: '',
               confirmPassword: '',
-              role: 'Patient', // Reset the role to 'Patient' after successful registration
+              role: 'patient', // Reset the role to 'Patient' after successful registration
             });
             // Other actions after successful registration
             toast.success('Registration Successful');
@@ -78,6 +80,11 @@ const Index = () => {
                     <div className='my-5'>
                         <div>
                             <form className="row g-4 p-5" onSubmit={handleSubmit}>
+                                <div className="col-md-12 position-relative">
+                                    <label htmlFor="name" className='text24 mb-2'>Full Name</label>
+                                    <input type="text" className="form-control" id='name' placeholder="Full Name" name="name" value={formData.name} onChange={handleChange} />
+                                    <i className="fa-regular fa-user iconPosition"></i>
+                                </div>
                                 <div className="col-md-12 position-relative">
                                     <label htmlFor="userName" className='text24 mb-2'>Username</label>
                                     <input type="text" className="form-control" id='userName' placeholder="username" name="username" value={formData.username} onChange={handleChange} />
